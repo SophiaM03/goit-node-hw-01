@@ -1,7 +1,7 @@
 {
   "name": "goit-node.js-01",
   "version": "1.0.0",
-  "description": "node hw-01",
+  "description": "node.js hw-01",
   "main": "index.js",
   "type": "module",
   "scripts": {
