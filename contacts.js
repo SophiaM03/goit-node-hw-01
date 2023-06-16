@@ -3,7 +3,6 @@ import { join } from "path";
 import { nanoid } from "nanoid";
 
 const contactsPath = join("./db", "contacts.json");
-
 async function listContacts() {
   const data = await fs.readFile(contactsPath);
   return JSON.parse(data);
@@ -18,7 +17,7 @@ async function removeContact(contactId) {
   const contacts = await listContacts();
   const index = contacts.findIndex((contact) => contact.id === contactId);
   const [remove] = contacts.splice(index, 1);
-  await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
+  await fs.writeFile(contactsPath, JSON.stringify(contacts));
   return remove;
 }
 
@@ -31,7 +30,7 @@ async function addContact(name, email, phone) {
     phone,
   };
   contacts.push(newContact);
-  const data = JSON.stringify(contacts, null, 2);
+  const data = JSON.stringify(contacts);
   await fs.writeFile(contactsPath, data);
   return newContact;
 }
