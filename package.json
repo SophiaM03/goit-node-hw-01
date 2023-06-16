@@ -1,0 +1,27 @@
+{
+  "name": "goit-node.js-01",
+  "version": "1.0.0",
+  "description": "node hw-01",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SophiaM03/goit-node-hw-01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SophiaM03/goit-node-hw-01/issues"
+  },
+  "homepage": "https://github.com/SophiaM03/goit-node-hw-01#readme",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "nanoid": "^4.0.2",
+    "nodemon": "^2.0.22"
+  }
+}
